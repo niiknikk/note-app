@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient( to right top, #439cfb, #f187fb);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.add{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    /* background-color: transparent; */
+    background: linear-gradient( to right  bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.1));
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+.add p{
+    padding: 0px 5px;
+}
+.add img{
+    width: 24px;
+    padding: 0rem 0.2rem;
+}
+.add:active{
+    transform: scale(0.99);
+}
+
+.note{
+    background: transparent;
+    background: linear-gradient( to right  bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.1));
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    margin: 60px 20px;
+    height: 400px;
+    width: 400px;
+}
+.note img{
+    width: 25px;
+}
+.note .tools{
+    background: linear-gradient( to left  bottom, rgb(135, 133, 241,0.7), rgba(204, 70, 204, 0.3));
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+.note button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 0px 10px;
+}
+.main{
+    padding: 20px;
+}
+textarea{
+    width: 100%;
+    min-height: 400px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow-y: hidden;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+.tools button img:active{
+    transform: scale(1.05);
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+@media (max-width: 500px){
+    body{
+        flex-wrap: wrap-reverse;
+    }
+}
